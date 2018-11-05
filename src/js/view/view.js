@@ -22,9 +22,9 @@ export const renderView = (parent, params) => {
 };
 export const renderViewItem = (parent, params) => {
 		let item = document.createElement('div');
-	item.className  = 'cols-sm-12 recipe_item';
+		item.className  = 'cols-sm-12 recipe_item';
 		document.appendChild(parent, item);
-	let html = `
+		let html = `
 			
 			<h1>${params.title}</h1>
 			<img src="${params.image_url}" alt="" />
