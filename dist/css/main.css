@@ -1,0 +1,28 @@
+.recept {
+	
+	height: 100px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	
+	margin-right: 15px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.recept img {
+	
+	border-radius: 10px;
+	width: 80px;
+	height: 80px;
+	float: right;
+}
+.recept h2 {
+	font-size: 20px;
+}
+.header {
+	height: 70px;
+}
+form {
+	margin-top: 15px;
+}
