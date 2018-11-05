@@ -21,9 +21,9 @@ export const renderView = (parent, params) => {
 	
 };
 export const renderViewItem = (parent, params) => {
+		parent.innerHTML ='';
 		let item = document.createElement('div');
 		item.className  = 'cols-sm-12 recipe_item';
-		document.appendChild(parent, item);
 		let html = `
 			
 			<h1>${params.title}</h1>
@@ -34,5 +34,6 @@ export const renderViewItem = (parent, params) => {
 
 
 	item.innerHTML =  html;
+		parent.insertBefore(item, parent.firstElementChild);
 
 };
