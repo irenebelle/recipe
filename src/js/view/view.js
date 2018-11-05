@@ -9,7 +9,7 @@ export const renderView = (parent, params) => {
 	  		  <div class="row recept">
 	  		  	<div class="col">
 	  		  			<h2>${params[key].title}</h2>
-	  		  			<p><a href="${config.simpleUrl}${params[key].recipe_id}">View receipte</a></p>
+	  		  			<p><a href="${config.simpleUrl}${params[key].recipe_id}" class="recipeUrl">View recipe</a></p>
 
 
 	  		  </div><div class="col-3"><img src="${params[key].image_url}"></div></div></div>`;
@@ -19,4 +19,20 @@ export const renderView = (parent, params) => {
 	
 }
 	
+};
+export const renderViewItem = (parent, params) => {
+		let item = document.createElement('div');
+	item.className  = 'cols-sm-12 recipe_item';
+		document.appendChild(parent, item);
+	let html = `
+			
+			<h1>${params.title}</h1>
+			<img src="${params.image_url}" alt="" />
+			<p><b>Ingredients</b>: ${params.ingredients}</p>
+		<p><a href="${params.source_url}"><b>Source</b></a></p>
+	`;
+
+
+	item.innerHTML =  html;
+
 };

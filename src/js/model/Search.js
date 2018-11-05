@@ -10,7 +10,10 @@ static async getInfo(request) {
 	return responce.json();
 }
 
-
+static async getItem(request) {
+	const responce = await fetch(request);
+	return responce.json();
+}
 	
 
 }
