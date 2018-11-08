@@ -20,11 +20,13 @@
 .recept h2 {
 	font-size: 20px;
 }
-.header {
-	height: 70px;
+
+@media (min-width: 576px) {
+.form-inline .form-control {
+    display: inline-block;
+    width: 500px;
+    vertical-align: middle;
 }
-form {
-	margin-top: 15px;
 }
 
 .recipe_item {

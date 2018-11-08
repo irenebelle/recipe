@@ -19,10 +19,9 @@ form.addEventListener('submit', function(e) {
 
 parent.addEventListener('click', function(e) {
 	e.preventDefault();
-	if(e.target.className === 'recipeUrl') {
-		const newrequest = e.target.href;
+	if(e.target.getAttribute('data-id')) {
+		const newrequest = config.simpleUrl+e.target.dataset.id;
 		Search.getItem(newrequest).then(text => renderViewItem(parent, text.recipe));
-			//console.log(Search.getItem(newrequest));
 	}
 })
 
