@@ -1,2 +1,2 @@
 # forkify-starter
-Starter for Forkify project
+Проект forkify по поиску рецептов на сайте food2fork
